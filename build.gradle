@@ -1,0 +1,16 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+group = 'com.safeway'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.codehaus.groovy:groovy-all:2.4.15')
+	compile group: 'org.axonframework', name: 'axon-core', version: '3.3.5'
+}
